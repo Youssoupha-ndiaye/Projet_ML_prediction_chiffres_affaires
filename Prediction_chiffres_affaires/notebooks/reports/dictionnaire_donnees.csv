@@ -1,0 +1,17 @@
+﻿Colonne,Type,Valeurs distinctes,Valeurs possibles,Manquants,Définition
+Store,int64,1115,1 à 1115,0,Identifiant du magasin
+Date,datetime64[us],722,2013-01-01 à 2014-12-23,0,Jour de la vente
+DayOfWeek,int64,7,"1, 2, 3, 4, 5, 6, 7",0,"Jour de la semaine (1 = lundi, 7 = dimanche)"
+Sales,int64,14404,0 ; 2574 à 21387,0,Chiffre d'affaires du jour (variable cible) ; 0 = aucune vente
+Promo,int64,2,"0, 1",0,"Promotion ponctuelle ce jour-là (0 = non, 1 = oui)"
+StateHoliday,category,4,0 | a | b | c,0,"Jour férié légal (0 = aucun, a = jour férié, b = Pâques, c = Noël)"
+SchoolHoliday,int64,2,"0, 1",0,"Vacances scolaires (0 = non, 1 = oui)"
+StoreType,category,4,a | b | c | d,0,Modèle de magasin (signification détaillée non fournie)
+Assortment,category,3,a | b | c,0,"Niveau d'assortiment (a = basique, b = supplémentaire, c = étendu)"
+CompetitionDistance,float64,1063,27.6 à 74973.32,0,"Distance au concurrent le plus proche, en mètres"
+CompetitionOpenSinceMonth,int64,13,0 ; 1 à 12,0,Mois d'ouverture du concurrent (0 = inconnu)
+CompetitionOpenSinceYear,int64,16,0 ; 2000 à 2014,0,Année d'ouverture du concurrent (0 = inconnu)
+Promo2,int64,2,"0, 1",0,"Participation à la promotion continue Promo2 (0 = non, 1 = oui)"
+Promo2SinceWeek,int64,53,0 ; 1 à 52,0,Semaine de début de Promo2 (0 = sans objet)
+Promo2SinceYear,int64,8,"0, 2009, 2010, 2011, 2012, 2013, 2014, 2015",0,Année de début de Promo2 (0 = sans objet)
+PromoInterval,category,4,"Aucun | Feb,May,Aug,Nov | Jan,Apr,Jul,Oct | Mar,Jun,Sept,Dec",0,Mois de relance de Promo2 (Aucun = sans objet)
